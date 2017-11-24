@@ -11,7 +11,6 @@ Required Data to predict SepalLength in cm, SepalWidth in cm, PetalLength in cm,
 """
 # import libraries
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 
 # get data from the dataset
