@@ -4,6 +4,10 @@
 Created on Fri Nov 24 15:31:58 2017
 
 @author: pranavjain
+
+This model predicts the flower species using KNN.
+Required Data to predict SepalLength in cm, SepalWidth in cm, PetalLength in cm, PetalWidth in cm.
+
 """
 # import libraries
 import numpy as np
@@ -21,7 +25,7 @@ y.reshape(-1,1)
 # Iris-setosa -> 0
 # Iris-versicolor -> 1
 # Iris-virginica -> 2
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from sklearn.preprocessing import LabelEncoder
 labelEncoder_y = LabelEncoder()
 y = labelEncoder_y.fit_transform(y)
 
@@ -49,6 +53,7 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
 # predict for custom values
+# Arguments(SepalLength in cm, SepalWidth in cm, PetalLength in cm, PetalWidth in cm)
 test = np.matrix('4 1 5 1')
 test =sc.transform(test)
 pred = classifier.predict(test)
