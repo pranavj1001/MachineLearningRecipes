@@ -52,7 +52,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, rand
 
 # Fitting Naive Bayes to the Training set
 from sklearn.ensemble import RandomForestClassifier
-classifier = RandomForestClassifier(n_estimators=40, criterion='entropy', random_state=0)
+classifier = RandomForestClassifier(n_estimators=40, criterion='gini', random_state=0)
 classifier.fit(X_train, y_train)
 
 # Predicting the Test set results
