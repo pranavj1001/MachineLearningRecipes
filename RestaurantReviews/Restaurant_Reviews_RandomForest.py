@@ -59,6 +59,6 @@ classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 
 # Making the Confusion Matrix
-# here the accuracy is (85 + 59) / 200 -> 72%
+# here the accuracy is (87 + 61) / 200 -> 74%
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
