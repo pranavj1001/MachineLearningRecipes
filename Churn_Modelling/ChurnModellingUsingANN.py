@@ -35,3 +35,28 @@ from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
+
+# Importing the Keras libraries and packages
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+
+# Initialising the ANN
+classifier = Sequential()
+
+# Adding the input layer and the first hidden layer
+classifier.add(Dense(activation="relu", input_dim=11, units=6, kernel_initializer="uniform"))
+
+# Adding the second hidden layer
+classifier.add(Dense(activation="relu", units=6, kernel_initializer="uniform"))
+
+# Adding the output layer
+classifier.add(Dense(activation="sigmoid", units=1, kernel_initializer="uniform"))
+
+# Compiling the ANN
+# if the output has 2 values then use loss='binary_crossentropy'
+# if the output has more than 2 values then use loss='categorical_crossentropy'
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
+
+# Fitting the ANN to the Training set
+classifier.fit(X_train, y_train, batch_size = 10, epochs = 100)
