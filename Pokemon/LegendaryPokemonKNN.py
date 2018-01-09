@@ -5,7 +5,7 @@ Created on Fri Nov 24 23:08:26 2017
 
 @author: pranavjain
 
-This model predicts whether a pokemon is legendary or not.
+This model classifies a pokemon as legendary or not-legendary.
 Required Data to predict Hit Points, Attack Points, Defence Points, Special Attack Points, Special Defence Points, Speed Points
 
 """
@@ -47,7 +47,7 @@ classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 
 # to calculate the number of results that we got wrong
-# eg. here we predicted only 15 wrong out of 200 
+# eg. here we predicted only 15 wrong out of 200
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 

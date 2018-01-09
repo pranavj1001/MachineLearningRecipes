@@ -5,55 +5,55 @@ Created on Sat Dec 16 00:10:02 2017
 
 @author: pranavjain
 
-This model predicts whether a mushroom is edible or poisonous
-Attribute Information: 
+This model classifies a mushroom as edible or poisonous
+Attribute Information:
 For y (dependent variables)
 (classes: edible=e, poisonous=p) after labelEncoding (edible=0, poisonous=1)
 
 For X (independent variables)
-cap-shape: 
+cap-shape:
     bell=b,conical=c, convex=x, flat=f, knobbed=k, sunken=s
-cap-surface: 
+cap-surface:
     fibrous=f, grooves=g, scaly=y, smooth=s
-cap-color: 
+cap-color:
     brown=n, buff=b, cinnamon=c, gray=g, green=r, pink=p, purple=u, red=e, white=w, yellow=y
-bruises: 
+bruises:
     bruises=t, no=f
-odor: 
+odor:
     almond=a, anise=l, creosote=c, fishy=y, foul=f, musty=m, none=n, pungent=p, spicy=s
-gill-attachment: 
+gill-attachment:
     attached=a, descending=d, free=f, notched=n
-gill-spacing: 
+gill-spacing:
     close=c, crowded=w, distant=d
-gill-size: 
+gill-size:
     broad=b, narrow=n
-gill-color: 
+gill-color:
     black=k, brown=n, buff=b, chocolate=h, gray=g, green=r, orange=o, pink=p, purple=u, red=e, white=w, yellow=y
-stalk-shape: 
+stalk-shape:
     enlarging=e, tapering=t
-stalk-root: 
+stalk-root:
     bulbous=b, club=c, cup=u, equal=e, rhizomorphs=z, rooted=r, missing=?
-stalk-surface-above-ring: 
+stalk-surface-above-ring:
     fibrous=f, scaly=y, silky=k, smooth=s
-stalk-surface-below-ring: 
+stalk-surface-below-ring:
     fibrous=f, scaly=y, silky=k, smooth=s
-stalk-color-above-ring: 
+stalk-color-above-ring:
     brown=n, buff=b, cinnamon=c, gray=g, orange=o, pink=p, red=e, white=w, yellow=y
-stalk-color-below-ring: 
+stalk-color-below-ring:
     brown=n, buff=b, cinnamon=c, gray=g, orange=o, pink=p, red=e, white=w, yellow=y
-veil-type: 
+veil-type:
     partial=p, universal=u
-veil-color: 
+veil-color:
     brown=n, orange=o, white=w, yellow=y
-ring-number: 
+ring-number:
     none=n, one=o, two=t
-ring-type: 
+ring-type:
     cobwebby=c, evanescent=e, flaring=f, large=l, none=n, pendant=p, sheathing=s, zone=z
-spore-print-color: 
+spore-print-color:
     black=k, brown=n, buff=b, chocolate=h, green=r, orange=o, purple=u, white=w, yellow=y
-population: 
+population:
     abundant=a, clustered=c, numerous=n, scattered=s, several=v, solitary=y
-habitat: 
+habitat:
     grasses=g, leaves=l, meadows=m, paths=p, urban=u, waste=w, woods=d
 
 """
@@ -67,7 +67,7 @@ X = dataset.iloc[:, 1:23]
 y = dataset.iloc[:, 0].values
 
 # Label Encode y and X
-# for eg. in y 
+# for eg. in y
 # Poisonous -> 1
 # Edible -> 0
 from sklearn.preprocessing import LabelEncoder
@@ -98,4 +98,3 @@ y_pred = classifier.predict(X_test)
 # eg. here we predicted all correct
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
-

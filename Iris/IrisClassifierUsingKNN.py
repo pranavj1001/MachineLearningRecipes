@@ -5,7 +5,7 @@ Created on Fri Nov 24 15:31:58 2017
 
 @author: pranavjain
 
-This model predicts the flower species using KNN.
+This model classifies the flower species using KNN.
 Required Data to predict SepalLength in cm, SepalWidth in cm, PetalLength in cm, PetalWidth in cm.
 
 """

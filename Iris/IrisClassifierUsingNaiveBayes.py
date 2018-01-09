@@ -5,7 +5,7 @@ Created on Sat Nov 25 23:50:01 2017
 
 @author: pranavjain
 
-This model predicts the flower species using Naive Bayes.
+This model classifies the flower species using Naive Bayes.
 Required Data to predict SepalLength in cm, SepalWidth in cm, PetalLength in cm, PetalWidth in cm.
 
 """
