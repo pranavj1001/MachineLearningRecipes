@@ -6,6 +6,7 @@ Created on Wed Nov 29 22:07:24 2017
 @author: pranavjain
 
 This model predicts whether a restaurant review is good or bad.
+Required data is just the review.
 
 """
 
