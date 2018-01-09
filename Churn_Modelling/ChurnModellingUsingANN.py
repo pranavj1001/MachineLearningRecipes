@@ -4,6 +4,9 @@
 Created on Sun Dec 31 14:46:57 2017
 
 @author: pranavjain
+
+This program predicts whether a customer will leave bank's service or not.
+
 """
 
 # Importing the libraries
