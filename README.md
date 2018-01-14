@@ -17,6 +17,8 @@ This repo contains various machine learning scripts which I've used on datasets 
 
 5. **Churn Model**: This dataset contains details about bank employees. Here, the aim is predict whether a customer will leave bank's service or not. It uses artificial neural network to do the job. Also, keras is used here. Details about required data is mentioned in the program itself.
 
+6. **Red Wine Quality**: WIP
+
 
 ## Queries?
 
