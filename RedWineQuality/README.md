@@ -6,7 +6,7 @@ The dataset here contains details about red wines. It has various parameters to 
 
 So, here using **Multiple Linear Regression** I've tried to predict quality of red wine. Then, using **Backward Elimination** I've built an optimal model and thereby took out some columns which are not necessary.
 
-## Selected Columns
+## Selected Columns after Backward Elimination
 
 - [ ] Fixed acidity
 - [x] Volatile acidity

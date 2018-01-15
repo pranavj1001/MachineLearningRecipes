@@ -4,6 +4,22 @@
 Created on Mon Jan 15 15:49:57 2018
 
 @author: pranavjain
+
+This model predicts the quality of the red wine. Also, an optimal model is built using Backward Elimination.
+
+Required Data to predict
+Fixed acidity
+Volatile acidity
+Citric acid
+Residual sugar
+Chlorides
+Free sulphur dioxide
+Total sulphur dioxide
+Density
+pH
+Sulphates
+Alcohol
+
 """
 
 # Importing the libraries
