@@ -19,3 +19,5 @@ So, here using **Multiple Linear Regression** I've tried to predict quality of r
 - [x] pH
 - [x] Sulphates
 - [x] Alcohol
+
+**Note**: I've considered p-value < 0.05
