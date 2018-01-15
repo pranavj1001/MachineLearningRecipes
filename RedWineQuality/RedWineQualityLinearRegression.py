@@ -42,7 +42,7 @@ regressor.fit(X_train, y_train)
 y_pred = regressor.predict(X_test)
 
 # Building the optimal model using Backward Elimination
-# consider p-value as 10
+# consider p-value < 0.05
 import statsmodels.formula.api as sm
 X = np.append(arr = np.ones((1599, 1)).astype(float), values = X, axis = 1)
 X_opt = X[:, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]]
