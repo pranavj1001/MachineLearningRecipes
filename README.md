@@ -17,7 +17,7 @@ This repo contains various machine learning scripts which I've used on datasets 
 
 5. **Churn Model**: This dataset contains details about bank employees. Here, the aim is predict whether a customer will leave bank's service or not. It uses artificial neural network to do the job. Also, keras is used here. Details about required data is mentioned in the program itself.
 
-6. **Red Wine Quality**: This dataset contains details about red wines. Here, the aim is to predict the quality of a wine and to find out the columns (parameters) which are important to judge a red wine. I've used Mulitple Linear Regression to predict and Backward Elimination to build the optimal path. Details about required data is mentioned in the folder itself.
+6. **Red Wine Quality**: This dataset contains details about red wines. Here, the aim is to predict the quality of a wine and to find out the columns (parameters) which are important to judge a red wine. I've used Mulitple Linear Regression to predict and Backward Elimination to build the optimal model. Details about required data is mentioned in the folder itself.
 
 
 ## Queries?
