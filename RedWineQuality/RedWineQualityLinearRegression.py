@@ -40,3 +40,32 @@ regressor.fit(X_train, y_train)
 
 # Predicting the Test set results
 y_pred = regressor.predict(X_test)
+
+# Building the optimal model using Backward Elimination
+# consider p-value as 10
+import statsmodels.formula.api as sm
+X = np.append(arr = np.ones((1599, 1)).astype(float), values = X, axis = 1)
+X_opt = X[:, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+# drop 'density'
+X_opt = X[:, [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+# drop 'fixed acidity'
+X_opt = X[:, [0, 2, 3, 4, 5, 6, 7, 9, 10, 11]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+# drop 'residual sugar'
+X_opt = X[:, [0, 2, 3, 5, 6, 7, 9, 10, 11]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+# drop 'critic acid'
+X_opt = X[:, [0, 2, 5, 6, 7, 9, 10, 11]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+# drop 'free sulphur dioxide'
+X_opt = X[:, [0, 2, 5, 7, 9, 10, 11]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+# hence the optimal model is now ready
