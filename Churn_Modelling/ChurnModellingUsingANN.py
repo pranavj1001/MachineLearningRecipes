@@ -85,3 +85,4 @@ cm = confusion_matrix(y_test, y_pred)
 
 # Predict for a user
 new_pred = classifier.predict(sc.transform(np.array([[0, 1, 670, 1, 47, 3, 80000, 2, 1, 1, 40000]])))
+new_pred = (new_pred > 0.5)
