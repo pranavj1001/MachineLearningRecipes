@@ -5,6 +5,8 @@ Created on Sun Feb  4 12:24:14 2018
 
 @author: pranavjain
 
+This program uses Principal Component Analysis to view the varience in various columns
+
 """
 
 # Importing the libraries
