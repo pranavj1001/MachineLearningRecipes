@@ -4,6 +4,20 @@
 Created on Tue Feb  6 20:49:46 2018
 
 @author: pranavjain
+
+This program predicts whether a customer will leave bank's service or not using artificial neural networks.
+Required data is
+CreditScore,
+Geography,
+Gender,
+Age,
+Tenure,
+Balance,
+NumOfProducts,
+HasCrCard,
+IsActiveMember,
+EstimatedSalary.
+
 """
 
 # Importing the libraries
