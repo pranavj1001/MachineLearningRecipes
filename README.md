@@ -21,7 +21,7 @@ This repo contains various machine learning scripts which I've used on datasets 
 
 7. **Cereals**: This dataset contains details about cereals. Here, the aim is to predict the rating of the cereal. I've used Mulitple Linear Regression to predict.
 
-8. **Google Stock Price**: WIP
+8. **Google Stock Price**: This dataset contains details about Google stock prices. Here, the aim is to predict Google stock prices using the test set. I've used Recurrent Neural Network (RNN) to do the job. Keras library is used here for training the RNN. More info is given inside the 'GoogleStockPrice' folder.
 
 
 ## Queries?
