@@ -56,4 +56,16 @@ regressor.fit(X_train, y_train, epochs = 200, batch_size = 32)
 # Predict the stock price of Google from the year 2017 (first month)
 dataset_test = pd.read_csv('Google_Stock_Price_Test.csv')
 jan_2017_stock_price = dataset_test.iloc[:, 1:2].values
-x_test = jan_2017_stock_price
+X_test = jan_2017_stock_price
+
+# Feature Scale the X_test
+X_test = sc.transform(X_test)
+
+# Making X_test a 3D array
+X_test = np.reshape(X_test, (20, 1, 1))
+
+# Predicting the results
+y_pred = regressor.predict(X_test)
+
+# Inverse Transform the predictions
+y_pred = sc.inverse_transform(y_pred)
