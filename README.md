@@ -21,6 +21,8 @@ This repo contains various machine learning scripts which I've used on datasets 
 
 7. **Cereals**: This dataset contains details about cereals. Here, the aim is to predict the rating of the cereal. I've used Mulitple Linear Regression to predict.
 
+8. **Google Stock Price**: WIP
+
 
 ## Queries?
 
