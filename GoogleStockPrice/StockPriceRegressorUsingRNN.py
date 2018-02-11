@@ -4,6 +4,9 @@
 Created on Sun Feb 11 15:15:23 2018
 
 @author: pranavjain
+
+This program trains on Google stock prices and then predicts Google stock prices for the month of January, 2017.
+
 """
 
 # Importing the libraries
