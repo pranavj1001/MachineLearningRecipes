@@ -69,3 +69,12 @@ y_pred = regressor.predict(X_test)
 
 # Inverse Transform the predictions
 y_pred = sc.inverse_transform(y_pred)
+
+# Visualising the results
+plt.plot(jan_2017_stock_price, color = 'red', label = 'Real Google Stock Price')
+plt.plot(y_pred, color = 'blue', label = 'Predicted Google Stock Price')
+plt.title('Google Stock Price Prediction')
+plt.xlabel('Time')
+plt.ylabel('Google Stock Price')
+plt.legend()
+plt.show()
