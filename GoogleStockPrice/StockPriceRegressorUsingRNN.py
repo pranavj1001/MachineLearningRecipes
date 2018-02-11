@@ -52,3 +52,8 @@ regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
 # Fitting the RNN to the Training set
 regressor.fit(X_train, y_train, epochs = 200, batch_size = 32)
+
+# Predict the stock price of Google from the year 2017 (first month)
+dataset_test = pd.read_csv('Google_Stock_Price_Test.csv')
+jan_2017_stock_price = dataset_test.iloc[:, 1:2].values
+x_test = jan_2017_stock_price
