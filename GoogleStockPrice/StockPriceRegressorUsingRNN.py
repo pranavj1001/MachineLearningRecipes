@@ -26,3 +26,29 @@ y_train = training_set_scaled[1:1258]
 
 # reshaping X_train
 X_train = np.reshape(X_train, (1257, 1, 1))
+
+# Importing the Keras libraries and packages
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import LSTM
+
+# Initialising the RNN
+regressor = Sequential()
+
+# Adding first layer of LSTM
+regressor.add(LSTM(units = 50, activation = 'sigmoid', input_shape = (None, 1), return_sequences = True))
+
+# Adding second layer of LSTM
+regressor.add(LSTM(units = 50, activation = 'sigmoid', return_sequences = True))
+
+# Adding third layer of LSTM
+regressor.add(LSTM(units = 50, activation = 'sigmoid'))
+
+# Adding the output layer
+regressor.add(Dense(units = 1))
+
+# Compiling the RNN
+regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
+
+# Fitting the RNN to the Training set
+regressor.fit(X_train, y_train, epochs = 200, batch_size = 32)
