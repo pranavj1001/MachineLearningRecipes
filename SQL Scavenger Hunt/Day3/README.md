@@ -12,3 +12,5 @@ The questions for Day3 are:
 2) Which state has the most hit and runs?
 
 * Return a table with the number of vehicles registered in each state that were involved in hit-and-run accidents, sorted by the number of hit and runs. Use either the vehicle2015 or vehicle2016 table for this, especially the registrationstatename and hitandrun columns.
+
+**Dataset**: [US Traffic Fatality Records](https://www.kaggle.com/usdot/nhtsa-traffic-fatalities)
