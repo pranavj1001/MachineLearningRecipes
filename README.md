@@ -23,6 +23,8 @@ This repo contains various machine learning scripts which I've used on datasets 
 
 8. **Google Stock Price**: This dataset contains details about Google stock prices. Here, the aim is to predict Google stock prices using the test set. I've used Recurrent Neural Network (RNN) to do the job. Keras library is used here for training the RNN. More info is given inside the 'GoogleStockPrice' folder.
 
+9. **SQL Scavenger Hunt**: I participated in the SQL Scavenger Hunt from Kaggle. This folder is not related to Machine Learning but deals with data using SQL and python.
+
 
 ## Queries?
 
