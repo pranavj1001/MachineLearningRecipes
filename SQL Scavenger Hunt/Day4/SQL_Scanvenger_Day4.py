@@ -37,7 +37,7 @@ transactions_per_day_2017
 # import plotting library
 import matplotlib.pyplot as plt
 
-# plot monthly bitcoin transactions
+# plot daily bitcoin transactions
 plt.plot(transactions_per_day_2017.transactions)
 plt.title("Daily Bitcoin Transcations in 2017")
 
