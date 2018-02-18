@@ -28,3 +28,6 @@ github.estimate_query_size(query_for_first_question)
 
 # run the query
 number_of_py_commits = github.query_to_pandas_safe(query_for_first_question, max_gb_scanned=6)
+
+# print the result
+number_of_py_commits
